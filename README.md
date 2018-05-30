@@ -1,21 +1,4 @@
-# studyvue
-
-> A Vue.js project
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Problem：
+    "export 'default' (imported as '__vue_script__') was not found in '!!babel-loader!../node_modules/vue-loader/lib/selector?type=script&index=0!./App.vue'
+Solution：
+      We couldn't see the whole project you mentioned. But I guess this error means you don't export anything in <script>. If you add a line of code: export default {}, maybe it won't be error again.If a Vue sfc doesn't have any <script> part that's OK. But if it has, you must export something (even just a empty plain object).

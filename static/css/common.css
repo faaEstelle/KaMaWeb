@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 微软雅黑;
 }
 a{
   text-decoration: none;
@@ -184,11 +185,86 @@ li{
   transform: translateX(0)
 }
 /*--------Banner-------*/
+/*--------产品列表---------*/
+.product-list{
+  width: 100%;
+}
+.product-list li{
+  width: 280px;
+  height: 366px;
+  background-color: #fff;
+}
+/*--------产品列表---------*/
 
 /*--------------------------------- @group page components  页面组件 ------------*/
 
+/*---首页--------*/
 .part-title{
-  height: 58px;
-  margin: 60px auto;
+  height: 178px;
+  padding-top: 60px;
+}
+.part-title .part-title-text,
+.part-title span{
+  font-size: 30px;
+  color:#5d5d5d;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 30px;
+}
+.part-title .part-title-text span{
+  margin: 0 20px;
+}
+
+.index-center .index-about{
+  height: 340px;
+  margin-bottom: 60px;
+  position: relative;
+}
+.index-center .index-about-video{
+  height: 100%;
+  border: 1px solid #5d5d5d;
+  border-radius: 10px;
+  padding: 10px;
+  width: 500px;
+  position: absolute;
+  right: 0;
+}
+.index-center .index-about-text{
+  position: absolute;
+  left: 0;
+  width: 574px;
+}
+.index-about-text p{
+  display: block;
+  display: -webkit-box;
+  font-size: 20px;
+  line-height: 28px;
+  color:#3d3d3d;
+  height: 276px;
+  overflow: hidden;
+  text-indent: 40px;
+  text-overflow:ellipsis;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+}
+.index-center a{
+  display: block;
+  margin-top: 30px;
+  line-height: 30px;
+  width: 120px;
+  text-align: center;
+  height: 30px;
+  border: 1px solid #de7332;
+  font-size: 20px;
+  color: #de7332;
+}
+.index-map{
+  height: 850px;
+  width: 100%;
+  background: url("../img/ditu.png") no-repeat center;
+}
+.index-product{
+  background-color: #eff7f7;
+  height: 1062px;
 }
 
