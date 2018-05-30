@@ -16,7 +16,8 @@ li{
 }
 /* -------------------------@gropu page structure 页面结构--------------*/
 .page-box{
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
   margin: 0 auto;
 }
 .deep-background{
@@ -116,8 +117,9 @@ li{
 /*--------Banner-------*/
 /*大banner*/
 .big-width{
-  width: 1920px;
-  height: 640px;
+  width: 100%;
+  max-width: 1920px;
+  min-height: 400px;
 }
 /*小banner*/
 .small-width{
@@ -259,9 +261,10 @@ li{
   color: #de7332;
 }
 .index-map{
-  height: 850px;
+  min-height: 532px;
   width: 100%;
   background: url("../img/ditu.png") no-repeat center;
+  background-size: cover;
 }
 .index-product{
   background-color: #eff7f7;
