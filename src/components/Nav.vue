@@ -1,65 +1,46 @@
 <template>
-  <div class="container">
+  <div class="deep-background">
+    <div class="container header">
     <span class="logo"></span>
     <ul class="login-register">
-      <li><a href="#">中</a></li>
-      <li>/</li>
-      <li><a href="#">English</a></li>
+      <li>{{$t("LoginRegister.login")}}</li>
+      <li>|</li>
+      <li>{{$t("LoginRegister.register")}}</li>
     </ul>
     <ul class="ch-en">
-      <li><a href="#">中</a></li>
+      <li @click="langLocale('cn')">中</li>
       <li>/</li>
-      <li><a href="#">English</a></li>
+      <li @click="langLocale('en')">English</li>
     </ul>
     <ul class="nav">
-      <li><a href="#">首页</a></li>
-      <li><a href="#">关于我们</a></li>
-      <li><a href="#">产品展示</a></li>
-      <li><a href="#">产品案例</a></li>
-      <li><a href="#">新闻资讯</a></li>
-      <li><a href="#">联系我们</a></li>
+      <li class="active">{{$t("Nav.index")}}</li>
+      <li>{{$t("Nav.about")}}</li>
+      <li>{{$t("Nav.product")}}</li>
+      <li>{{$t("Nav.case")}}</li>
+      <li>{{$t("Nav.news")}}</li>
+      <li>{{$t("Nav.contact")}}</li>
     </ul>
+  </div>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'HelloWorld',
     data() {
       return {
         msg: 'Welcome to Your Vue.js App'
       }
     },
     computed:{
-      User(){
-        return this.$store.getters.GetUser
-      }
+      // User(){
+      //   return this.$store.getters.GetUser
+      // }
     },
     methods:{
-      Regist(){
-        this.$store.dispatch('AddUser',this.User)
+      langLocale(type){
+      this.$i18n.locale=type
       }
     }
   }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-  h1, h2 {
-    font-weight: normal;
-  }
-
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-
-  a {
-    color: #42b983;
-  }
-</style>
