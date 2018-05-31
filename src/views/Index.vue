@@ -31,6 +31,19 @@
       <a href="#" class="more-btn">{{$t("MoreBtn.case")}}</a>
     </div>
   </div>
+  <div class="index-news">
+    <PartTitle></PartTitle>
+    <div class="container">
+      <NewsList></NewsList>
+      <a href="#" class="more-btn">{{$t("MoreBtn.news")}}</a>
+    </div>
+  </div>
+  <div class="index-partner">
+    <div class="container">
+      <p class="title">{{$t("Partner.title")}}</p>
+      <p class="description">{{$t("Partner.description")}}</p>
+    </div>
+  </div>
   <Footer></Footer>
 
 </div>
@@ -42,6 +55,7 @@
   import PartTitle from '../components/PartTitle'
   import ProductList from '../components/ProductList'
   import CaseList from '../components/CaseList'
+  import NewsList from '../components/NewsList'
   import Footer from '../components/Footer'
     export default {
        components:{
@@ -50,6 +64,7 @@
          PartTitle,
          ProductList,
          CaseList,
+         NewsList,
          Footer
        }
     }

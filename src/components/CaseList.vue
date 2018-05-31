@@ -1,8 +1,11 @@
 <template>
   <ul class="case-list">
     <li v-for="item in caseList">
+      <a :href="item.caseUrl">
         <img :src="item.imgUrl">
         <p>{{item.caseName}}</p>
+      </a>
+
     </li>
   </ul>
 
