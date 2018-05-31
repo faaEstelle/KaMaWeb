@@ -132,7 +132,6 @@ li{
   position: relative;
 }
 .carousel-wrap .slide-ul{
-  position: relative;
   width: 100%;
   height: 100%;
 }
@@ -187,6 +186,7 @@ li{
   transform: translateX(0)
 }
 /*--------Banner-------*/
+
 /*--------产品列表---------*/
 .product-list{
   width: 100%;
@@ -195,9 +195,89 @@ li{
   width: 280px;
   height: 366px;
   background-color: #fff;
+  padding: 20px 20px 30px 20px;
+  margin-right: 26px;
+  border:1px solid #fff;
+  margin-bottom: 30px;
+  position: relative;
+}
+.product-list li:nth-child(4n){
+  margin-right: 0;
+}
+
+.product-list p{
+  font-size: 16px;
+  font-weight: bold;
+  color: #5d5d5d;
+  margin: 20px 0 10px 0;
+}
+.product-list .product-buy{
+  color: #fff;
+  font-size: 16px;
+  display: block;
+  background: url("../img/bug-bg.png");
+  width: 65px;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+}
+.product-list li:hover{
+  border-color: #de7332;
+}
+.product-list .item-mask{
+  position: absolute;
+  left: 0;
+  top:0;
+  display: none;
+  width: 278px;
+  height: 364px;
+  background: rgba(0,0,0,0.6);
+  padding-top: 50%;
+}
+.product-list .item-mask span{
+  width: 100%;
+  text-align: center;
+  display: block;
+  color:#de7332;
+}
+.product-list .item-mask span:first-child{
+  font-size: 30px;
+}
+.product-list .item-mask span:last-child{
+  font-size: 18px;
+  line-height: 40px;
 }
 /*--------产品列表---------*/
-
+/*------产品案例列表--------*/
+.case-list{
+  width: 100%;
+}
+.case-list li{
+  width: 280px;
+  height: 366px;
+  background-color: #eee;
+  padding: 20px 20px 30px 20px;
+  margin-right: 26px;
+  border:1px solid #535758;
+  margin-bottom: 30px;
+  position: relative;
+}
+.case-list li:nth-child(4n){
+  margin-right: 0;
+}
+.case-list p{
+  font-size: 18px;
+  text-align: center;
+  color: #5d5d5d;
+  margin: 20px 0;
+}
+.case-list li:hover{
+  background-color: #fff;
+  box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.3);
+  -weikit-box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.3);
+  -zom-box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.3);
+}
+/*------产品案例列表--------*/
 /*--------------------------------- @group page components  页面组件 ------------*/
 
 /*---首页--------*/
@@ -248,10 +328,10 @@ li{
   text-overflow:ellipsis;
   -webkit-line-clamp: 10;
   -webkit-box-orient: vertical;
+  margin-bottom: 30px;
 }
-.index-center a{
+.more-btn{
   display: block;
-  margin-top: 30px;
   line-height: 30px;
   width: 120px;
   text-align: center;
@@ -263,11 +343,14 @@ li{
 .index-map{
   min-height: 532px;
   width: 100%;
-  background: url("../img/ditu.png") no-repeat center;
-  background-size: cover;
+}
+.index-map img{
+  width: 100%;
 }
 .index-product{
   background-color: #eff7f7;
   height: 1062px;
 }
+
+
 
