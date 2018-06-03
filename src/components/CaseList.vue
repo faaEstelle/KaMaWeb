@@ -1,11 +1,12 @@
 <template>
   <ul class="case-list">
-    <li v-for="item in caseList">
-      <a :href="item.caseUrl">
-        <img :src="item.imgUrl">
-        <p>{{item.caseName}}</p>
-      </a>
-
+    <li class="col-lg-3 col-md-3 col-sm-3 col-xs-6" v-for="item in caseList">
+      <div>
+        <a :href="item.caseUrl">
+          <img :src="item.imgUrl">
+          <p class="font-size-16">{{item.caseName}}</p>
+        </a>
+      </div>
     </li>
   </ul>
 

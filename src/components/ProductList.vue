@@ -1,13 +1,15 @@
 <template>
   <ul class="product-list" >
-    <li v-for="item in productList">
-      <a class="item-mask">
-        <span>{{$t("ProductMask.title")}}</span>
-        <span>{{$t("ProductMask.more")}}+</span>
-      </a>
-      <img :src="item.imgUrl">
-      <p>{{item.productName}}</p>
-      <a class="product-buy" :href="item.buyUrl">购买</a>
+    <li class="col-lg-3 col-md-3 col-sm-3 col-xs-6" v-for="item in productList">
+      <div>
+        <a class="item-mask">
+          <span>{{$t("ProductMask.title")}}</span>
+          <span>{{$t("ProductMask.more")}}+</span>
+        </a>
+        <img :src="item.imgUrl">
+        <p class="font-size-16">{{item.productName}}</p>
+        <a class="product-buy" :href="item.buyUrl">购买</a>
+      </div>
     </li>
   </ul>
 </template>

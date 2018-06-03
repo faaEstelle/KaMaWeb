@@ -1,6 +1,6 @@
 <template>
     <ul class="news-list">
-      <li v-for="item in newsList">
+      <li class="col-lg-4 col-md-4 col-sm-12 col-xs-12" v-for="item in newsList">
         <a>
           <p class="date">{{item.date}}<span>{{item.year}}</span></p>
           <p class="title">{{item.title}}</p>

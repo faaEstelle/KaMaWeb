@@ -5,7 +5,9 @@
 </template>
 
 <script>
-import '../static/css/common.css'
+  // import 'bootstrap/dist/css/bootstrap.css'
+  import '../static/css/common.css'
+  import '../static/js/index'
   export default {
 
   }
