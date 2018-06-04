@@ -1,7 +1,7 @@
 <template>
     <div class="container part-title">
-      <img class="part-title-icon" :src="imgUrl">
-      <p class="part-title-text"><span>|</span>{{text}}</p>
+      <img class="part-title-icon" :src="Title.imgUrl">
+      <p class="part-title-text"><span>|</span>{{language=='cn'?Title.cnTitle:Title.enTitle}}</p>
     </div>
 </template>
 
@@ -9,9 +9,11 @@
     export default {
       data(){
         return{
-          imgUrl:'/static/img/parttitle-1.png',
-          text:'关于我们'
+          language:this.$i18n.locale
         }
+      },
+      props:{
+        Title:{cnTitle:'',enTitle:'',imgUrl:''}
       }
     }
 </script>

@@ -1,14 +1,14 @@
 <template>
-  <div class="carousel-wrap" id="carousel"  :class="width">
+  <div class="carousel-wrap" id="carousel"  :class="Options.bannerwidth">
     <transition-group tag="ul" name="list" class="slide-ul">
-      <li v-for="(list,index) in slideList" :key="index" :show="index === currentIndex" @mouseenter="stop" @mouseleave="go">
+      <li v-for="(list,index) in Options.slideList" :key="index" :show="index === currentIndex" @mouseenter="stop" @mouseleave="go">
         <a :href="list.clickUrl">
           <img :src="list.image" :alt="list.desc"/>
         </a>
       </li>
     </transition-group>
-    <div class="carousel-items">
-      <span v-for="(item,index) in slideList.length" :class="{'active':index===currentIndex}" @mouseover="change(index)"></span>
+    <div class="carousel-items" v-if="Options.slideList.length>1">
+      <span v-for="(item,index) in Options.slideList.length" :class="{'active':index===currentIndex}" @mouseover="change(index)"></span>
     </div>
   </div>
 
@@ -18,28 +18,16 @@
     export default {
         data(){
           return {
-            width:'big-width',
-            slideList: [
-              {
-                "clickUrl": "#",
-                "desc": "nhwc",
-                "image": "/static/img/banner-1.png"
-              },
-              {
-                "clickUrl": "#",
-                "desc": "hxrj",
-                "image": "/static/img/banner-1.png"
-              },
-              {
-                "clickUrl": "#",
-                "desc": "rsdh",
-                "image": "/static/img/banner-1.png"
-              }
-            ],
             currentIndex: 0,
             timer: ''
           }
         },
+      props:{
+          Options:{
+            bannerwidth:'',
+            slideList:[]
+          }
+      },
       methods: {
         go() {
           this.timer = setInterval(() => {
@@ -55,7 +43,7 @@
         },
         autoPlay() {
           this.currentIndex++
-          if (this.currentIndex > this.slideList.length - 1) {
+          if (this.currentIndex > this.Options.slideList.length - 1) {
             this.currentIndex = 0
           }
         }

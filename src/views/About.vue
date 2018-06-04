@@ -12,7 +12,7 @@
       <img src="/static/img/develop.jpg"/>
       <div class="about-title develop">
         <p>{{$t("AboutNav.develop")}}</p>
-        <a>{{$t("MoreBtn.more")}}</a>
+        <a href="/About/Develop">{{$t("MoreBtn.more")}}</a>
       </div>
     </div>
     <div class="about-summary">
