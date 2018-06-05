@@ -9,12 +9,30 @@
         <hr/>
       </div>
       <div class="culture-content">
-        <div class="spirit"></div>
-        <div class="values"></div>
-        <div class="corporate-culture"></div>
-        <div class="management"></div>
-        <div class="administration"></div>
-        <div class="service"></div>
+        <div class="spirit">
+          <p class="item-title">{{$t("Culture.part1.title")}}</p>
+          <p class="item-content">{{$t("Culture.part1.content")}}</p>
+        </div>
+        <div class="values">
+          <p class="item-title">{{$t("Culture.part2.title")}}</p>
+          <p class="item-content">{{$t("Culture.part2.content")}}</p>
+        </div>
+        <div class="corporate-culture">
+          <p class="item-title">{{$t("AboutNav.culture")}}</p>
+        </div>
+        <div class="management">
+          <p class="item-title">{{$t("Culture.part3.title")}}</p>
+          <p class="item-content">{{$t("Culture.part3.content")}}</p>
+        </div>
+        <div class="administration">
+          <p class="item-title">{{$t("Culture.part4.title")}}</p>
+          <p class="item-content">{{$t("Culture.part4.content")}}</p>
+        </div>
+        <div class="service">
+          <p class="item-title">{{$t("Culture.part5.title")}}</p>
+          <p class="item-content">{{$t("Culture.part5.content")}}</p>
+          <p class="item-content">{{$t("Culture.part5.content2")}}</p>
+        </div>
       </div>
     </div>
     <Footer></Footer>

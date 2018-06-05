@@ -12,7 +12,7 @@ const MessagesCh = {
   ProductMask:{title:'主营产品',more:'更多'},
   Partner:{title:'来自全球的合作伙伴',description:'卡玛用心，用户安心。不懈地了解客户需求、帮助客户，为客户提供优质的产品与专业的支持。始终以客户为中心，坚持客户第一。'},
   //关于我们相关
-  AboutNav:{survey:"公司概况",develop:'发展历程',culture:'公司文化',service:'优质服务',certificate:'认证证书'},
+  AboutNav:{survey:"公司概况",develop:'发展历程',culture:'企业文化',service:'优质服务',certificate:'认证证书'},
   Survey:{
     part1:'卡玛木皮是一家集源头采购、自行工厂立体刨切、销售为一体的强势实力的北美木皮供应商，企业具备优质的源头采购竞争优势，优秀的销售团队及完善的售后服务，全国多家销售网点为全球的木皮及原木采购商营造物美价廉的采购基础。',
     part2:'公司现拥有5万平方的可售原木堆场，10000平方米面积的木皮分解仓库，全国3000平方米的销售展厅以及500万平方的库存优势，为阁下提供完善的等级和稳定的数量，共享双赢。',
@@ -38,9 +38,8 @@ const MessagesCh = {
     part1:{'title':'企业精神',content:'诚信 实务 创新 卓越'},
     part2:{'title':'核心价值观',content:'忠诚 专注'},
     part3:{'title':'经营理念',content:'以客为尊 助力成功'},
-    part4:{'title':'企业精神',content:'诚信 实务 创新 卓越'},
-    part5:{'title':'管理理念',content:'以人为本 人企双赢'},
-    part6:{'title':'服务宗旨',content:'为顾客创造价值',content2:'做顾客满意的产品'},
+    part4:{'title':'管理理念',content:'以人为本 人企双赢'},
+    part5:{'title':'服务宗旨',content:'为顾客创造价值',content2:'做顾客满意的产品'},
   },
   Service:{
     service1:{title:'科学的服务支持',item1:'拥有高标准的旗舰店',item2:'拥有高标准统一管理的授权店'},
