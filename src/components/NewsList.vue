@@ -15,6 +15,7 @@
     export default {
         data(){
           return{
+            language:this.$i18n.locale
           }
         },
       props:{

@@ -35,9 +35,29 @@ li{
 .inner-nav {
   font-size: 20px;
   margin-top: 30px;
+  color:#de7332;
 }
 .inner-nav a{
   font-size: 20px;
+  color:#5d5d5d
+}
+.inner-nav .left-arrow{
+  background: url("../img/leftarrow.png") no-repeat center;
+  width: 20px;
+  display: inline-block;
+  height: 26px;
+  vertical-align: text-bottom;
+}
+.page-inner-title{
+  margin: 50px 0;
+}
+.page-inner-title p{
+  line-height: 50px;
+  font-size: 30px;
+  color:#5d5d5d
+}
+.page-inner-title hr{
+  color:#5d5d5d
 }
 /*----Nav---*/
 .header{
@@ -551,7 +571,161 @@ li{
 .about-summary .culture{
   background-color: #fff55b;
 }
+
+  /*公司概况*/
+.survey-content{
+  font-size: 22px;
+  line-height: 34px;
+  text-indent: 44px;
+  color:#5d5d5d;
+}
+.about-kind{
+  margin: 0 auto;
+}
+.about-kind>img{
+  width: 100%;
+  margin: 54px 0;
+}
+.about-kind>.survey-content:last-child{
+  margin: 38px 0 100px;
+}
   /*发展历程*/
+ .develop-time-line{
+
+   height: 1030px;
+ }
+ .develop-time-line >div{
+   display: inline-block;
+   vertical-align: top;
+ }
+.develop-left>div,
+.develop-right>div{
+  height: 224px;
+  position: absolute;
+}
+
+ .develop-left,.develop-right{
+   width: calc(50% - 40px);
+   height: 100%;
+   position: relative;
+ }
+ .time-line{
+   font-size: 45px;
+   line-height: 60px;
+   width: 230px;
+   color: #5d5d5d;
+   margin-bottom: 26px;
+   border-bottom: 2px solid #a0a0a0;
+ }
+ .develop-right .time-line{
+   text-align: right;
+ }
+.develop-left .time-line{
+  margin-left: 150px;
+}
+ .time-mileage{
+   font-size: 20px;
+   line-height: 34px;
+   color: #a0a0a0;
+ }
+ .develop-line{
+   margin-top: 50px;
+   width: 40px;
+     height: 884px;
+   position: relative;
+ }
+ .spot-line{
+   height: 100%;
+   width: 2px;
+   margin: 0 auto;
+   background-color: #a0a0a0;
+ }
+.line-spot{
+  /*height: 100%;*/
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
+}
+ .line-spot li{
+   background: url("../img/line-spot.png") no-repeat center;
+   height: 23px;
+   width: 40px;
+   margin-bottom: 100px;
+ }
+.line-spot li:last-child{
+  margin-bottom: 0;
+}
+.time-2015{
+  top: 124px;
+}
+.time-2013{
+  top: 248px;
+}
+.time-2011{
+  top: 370px;
+}
+.time-2010{
+  top: 495px;
+}
+.time-2008{
+  top: 616px;
+}
+.time-2006{
+  top: 740px;
+}
+.time-2003{
+  top: 862px;
+}
+.about-footer{
+  font-size: 20px;
+  color:#a0a0a0;
+  line-height: 34px;
+  margin: 50px auto 98px;
+}
+
+  /*企业文化*/
+.culture-content>div {
+  display: inline-block;
+  transform:rotate(45deg);
+  -ms-transform:rotate(45deg); 	/* IE 9 */
+  -moz-transform:rotate(45deg); 	/* Firefox */
+  -webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+  -o-transform:rotate(45deg); 	/* Opera */
+}
+.culture-content .spirit{
+  background: url("../img/spirit.png") no-repeat center;
+}
+.culture-content .values{
+  background: url("../img/values.png") no-repeat center;
+}
+.culture-content .management{
+  background: url("../img/management.png") no-repeat center;
+}
+.culture-content .administration{
+  background: url("../img/administration.png") no-repeat center;
+}
+.culture-content .service{
+  background: url("../img/service.png") no-repeat center;
+}
+.culture-content .corporate-culture{
+  background-color: #de7332;
+}
+  /*优质服务*/
+.service-content>div{
+  display: inline-block;
+  width: 50%;
+}
+.service-content .service-title{
+  font-size: 30px;
+  color: #de7332;
+}
+.service-content li{
+  font-size: 20px;
+  color: #5d5d5d;
+  line-height: 34px;
+  display: block;
+  list-style:square inside  url("../img/liststyle.png");
+}
 
 /*---关于我们--------*/
 /*----------- group   overrrides       ------------*/
@@ -589,6 +763,19 @@ li{
   }
   .font-size-16{
     font-size: 16px;
+  }
+  /*企业文化*/
+  .culture-content{
+    height: 702px;
+    width: 1078px;
+    margin: 100px auto;
+  }
+  .culture-content>div{
+    width: 240px;
+    height: 240px;
+  }
+  .culture-content .spirit{
+
   }
 
 }
@@ -642,5 +829,10 @@ li{
   .footer .footer-list{
     width: 25%;
   }
+  /*发展历程*/
+  .about-kind,.about-footer{
+    width: 70%;
+  }
+
 }
 

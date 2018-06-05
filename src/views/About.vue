@@ -5,7 +5,7 @@
       <img src="/static/img/survey.jpg"/>
       <div class="about-title survey">
         <p>{{$t("AboutNav.survey")}}</p>
-        <a>{{$t("MoreBtn.more")}}</a>
+        <a href="/About/Survey">{{$t("MoreBtn.more")}}</a>
       </div>
     </div>
     <div class="about-summary">
@@ -19,14 +19,14 @@
       <img src="/static/img/cultrue.jpg"/>
       <div class="about-title culture">
         <p>{{$t("AboutNav.culture")}}</p>
-        <a>{{$t("MoreBtn.more")}}</a>
+        <a href="/About/Culture">{{$t("MoreBtn.more")}}</a>
       </div>
     </div>
     <div class="about-summary">
       <img src="/static/img/service.jpg"/>
       <div class="about-title service">
         <p>{{$t("AboutNav.service")}}</p>
-        <a>{{$t("MoreBtn.more")}}</a>
+        <a href="/About/Service">{{$t("MoreBtn.more")}}</a>
       </div>
     </div>
     <div class="about-summary no-bottom">

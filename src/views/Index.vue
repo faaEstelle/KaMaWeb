@@ -29,7 +29,7 @@
     </div>
   </div>
   <div class="index-case padding-bo-60">
-    <PartTitle :Title="PartTitles[3]"></PartTitle>
+    <PartTitle :Title="PartTitles[2]"></PartTitle>
     <div class="container">
       <CaseList :Options="CasesData"></CaseList>
     </div>
@@ -38,7 +38,7 @@
     </div>
   </div>
   <div class="index-news padding-bo-60">
-    <PartTitle :Title="PartTitles[4]"></PartTitle>
+    <PartTitle :Title="PartTitles[3]"></PartTitle>
     <div class="container">
       <NewsList :Options="NewsData"></NewsList>
     </div>
