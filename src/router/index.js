@@ -6,6 +6,14 @@ import AboutDevelop from '../views/AboutDevelop'
 import AboutSurvey from '../views/AboutSurvey'
 import AboutCulture from '../views/AboutCulture'
 import AboutService from '../views/AboutService'
+import AboutCertificate from '../views/AboutCertificate'
+import Products from '../views/Products'
+import ProductDetails from '../views/ProductDetails'
+import Cases from '../views/Cases'
+import CaseDetails from '../views/CaseDetails'
+import News from '../views/News'
+import NewsDetail from '../views/NewsDetails'
+
 
 Vue.use(Router)
 
@@ -41,7 +49,43 @@ export default new Router({
       path:'/About/Service',
       name:'优质服务',
       component:AboutService
+    },
+    {
+      path:'/About/AboutCertificate',
+      name:'认证证书',
+      component:AboutCertificate
+    },
+    {
+      path:'/Products',
+      name:'产品列表',
+      component:Products
+    },
+    {
+      path:'/Products/Details',
+      name:'产品详情',
+      component:ProductDetails
+    },
+    {
+      path:'/Cases',
+      name:'产品案例',
+      component:Cases
+    },
+    {
+      path:'/Cases/Details',
+      name:'案例详情',
+      component:CaseDetails
+    },
+    {
+      path:'/News',
+      name:'企业新闻',
+      component:News
+    },
+    {
+      path:'/News/Details',
+      name:'新闻详情',
+      component:NewsDetail
     }
+
 
 
   ]

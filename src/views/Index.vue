@@ -1,6 +1,6 @@
 <template>
 <div class="page-box">
-  <Nav></Nav>
+  <Nav :NavValue="currentNav"></Nav>
   <Banner :Options="BannerData"></Banner>
   <div class="index-center">
     <div class="index-about padding-bo-60">
@@ -78,6 +78,7 @@
     export default {
        data(){
          return{
+           currentNav:1,
            BannerData:{
              bannerwidth:'big-width',
              slideList: [
@@ -106,6 +107,10 @@
            ],
            ProductsData:{
              num:8,
+             nameStyle:'font-size-16 left-position',
+             btnText:{cnText:'购买',enText:'Buy'},
+             btnBg:'product-buy',
+             lineState:false,
              data:[
                {imgUrl:'/static/img/product-1.png',productName:'美国东部的红橡',enName:'',buyUrl:'#'},
                {imgUrl:'/static/img/product-2.png',productName:'黑白檀',enName:'',buyUrl:'#'},

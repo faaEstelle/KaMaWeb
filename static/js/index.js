@@ -1,15 +1,13 @@
-// $(document).ready(Ready)
-//
-// function Ready () {
-//   //二级导航显示隐藏
-//   $('.nav li').hover(function (e) {
-//     console.log('hover')
-//     let $t = $(e.currentTarget)
-//     let type = $t.data('type')
-//     $(`.dropdown-nav[data-value="${type}"]`).show()
-//   }, function (e) {
-//     let $t = $(e.currentTarget)
-//     let type = $t.data('type')
-//     $(`.dropdown-nav[data-value="${type}"]`).hide()
-//   })
-// }
+$(document).ready(Ready)
+
+function Ready () {
+  //导航栏悬浮二级菜单
+  $('.nav a').mouseover((e)=>{
+    let $t = $(e.currentTarget)
+    let type = $t.data('type')
+    if(type) $(`.dropdown-nav[data-value="${type}"]`).show()
+  }).mouseout(()=>{
+    $('.dropdown-nav').hide()
+  })
+
+}

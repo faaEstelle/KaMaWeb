@@ -7,8 +7,8 @@
           <span>{{$t("ProductMask.more")}}+</span>
         </a>
         <img :src="item.imgUrl">
-        <p class="font-size-16">{{item.productName}}</p>
-        <a class="product-buy" :href="item.buyUrl">{{language === 'cn'?'购买':'Buy'}}</a>
+        <p :class="Options.nameStyle">{{item.productName}}</p>
+        <a class="pro-btn" :class="Options.btnBg" :href="item.buyUrl">{{language === 'cn'?Options.btnText.cnText:Options.btnText.enText}}</a>
       </div>
     </li>
   </ul>
@@ -24,6 +24,10 @@
       props:{
           Options:{
             num:0,
+            nameStyle:'',
+            btnText:{cnText:'',enText:''},
+            btnBg:'',
+            lineState: false,
             data:[]
           }
       },

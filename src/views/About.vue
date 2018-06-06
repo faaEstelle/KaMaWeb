@@ -1,6 +1,6 @@
 <template>
   <div class="page-box About">
-    <Nav></Nav>
+    <Nav :NavValue="currentNav"></Nav>
     <div class="about-summary">
       <img src="/static/img/survey.jpg"/>
       <div class="about-title survey">
@@ -33,7 +33,7 @@
       <img src="/static/img/certificate.jpg"/>
       <div class="about-title certificate">
         <p>{{$t("AboutNav.certificate")}}</p>
-        <a>{{$t("MoreBtn.more")}}</a>
+        <a href="/About/AboutCertificate">{{$t("MoreBtn.more")}}</a>
       </div>
     </div>
     <Footer></Footer>
@@ -46,7 +46,7 @@
   export default {
     data(){
       return {
-
+        currentNav:2,
       }
     },
     components:{

@@ -1,6 +1,6 @@
 <template>
   <div class="page-box">
-    <Nav></Nav>
+    <Nav :NavValue="currentNav"></Nav>
     <Banner :Options="BannerData"></Banner>
     <div class="container">
       <p class="inner-nav"><a href="/About">{{$t("Nav.about")}}</a><span class="left-arrow"></span>{{$t("AboutNav.develop")}}</p>
@@ -67,6 +67,7 @@
   export default {
     data(){
       return{
+        currentNav:2,
         BannerData:{
           bannerwidth:'big-width',
           slideList: [
