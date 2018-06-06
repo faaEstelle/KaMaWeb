@@ -198,7 +198,7 @@ li{
 /*小banner*/
 .small-width{
   max-width: 1920px;
-  max-height: 320px;
+  min-height: 200px;
 }
 .carousel-wrap{
   margin: 0 auto;
@@ -286,17 +286,22 @@ li{
   color: #fff;
   font-size: 16px;
   display: block;
-  width: 100%;
   height: 30px;
   line-height: 30px;
   padding-left: 10px;
 }
 .product-list .product-buy{
   background: url("../img/bug-bg.png") no-repeat left;
+  width: 65px;
 }
 .product-list .product-order{
   background: url("../img/order-bg.png") no-repeat center;
-  text-align: center;
+  width: 120px;
+  margin: 0 auto;
+}
+.product-list .pro-line{
+  border-bottom: 2px dashed #7e7e7e;
+  margin: 20px auto;
 }
 .product-list li>div:hover{
   border-color: #de7332;

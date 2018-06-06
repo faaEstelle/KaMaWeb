@@ -44,7 +44,11 @@ const MessagesCh = {
   Service:{
     service1:{title:'科学的服务支持',item1:'拥有高标准的旗舰店',item2:'拥有高标准统一管理的授权店'},
     service2:{title:'专业的软件支持',item1:'合理科学的卖场环境规划',item2:'统一卖场管理手册',item3:'优质的客户跟踪服务管理体系',item4:'统一联合促销活动'},
+  },
+  ProductKind:{
+    main:'主营产品',best:'精品产品',north:'北美材',europe:'欧洲材',southeast:'东南亚材',africa:'非洲材',centralSouth :'中南美材',dyeing:'染色系列'
   }
+
 
 }
 

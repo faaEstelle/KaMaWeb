@@ -3,6 +3,10 @@
     <Nav :NavValue="currentNav"></Nav>
     <Banner :Options="BannerData"></Banner>
     <div class="container">
+      <div class="page-inner-title">
+        <p>{{$t("ProductKind.main")}}</p>
+        <hr/>
+      </div>
       <ProductList :Options="ProductsData"></ProductList>
     </div>
     <Footer></Footer>
