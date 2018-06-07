@@ -47,6 +47,9 @@ const MessagesCh = {
   },
   ProductKind:{
     main:'主营产品',best:'精品产品',north:'北美材',europe:'欧洲材',southeast:'东南亚材',africa:'非洲材',centralSouth :'中南美材',dyeing:'染色系列'
+  },
+  ProductDetail:{
+    name:'产品名称',kind:'产品类型',kindName:'皮木', version:'产品型号',times:'查看次数',phone:'订购热线',phoneNumber:'0769-82906000',describeTitle:'产品详情',orderTitle:'订购信息',contacts:'联系人',call:'电话',mail:'邮箱',address:'收货地址',identifying:'验证码',order:'立即预定',submit:'提交',reset:'重置',onlineOrder:'在线预定',last:'上一个',next:'下一个'
   }
 
 

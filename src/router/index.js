@@ -61,7 +61,7 @@ export default new Router({
       component:Products
     },
     {
-      path:'/Products/Details',
+      path:'/Products/Details/:productName',
       name:'产品详情',
       component:ProductDetails
     },

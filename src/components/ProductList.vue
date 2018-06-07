@@ -7,7 +7,7 @@
           <span>{{$t("ProductMask.more")}}+</span>
         </a>
         <img :src="item.imgUrl">
-        <p :class="Options.nameStyle">{{item.productName}}</p>
+        <router-link :to="'/Products/Details/'+item.productName"><p :class="Options.nameStyle">{{item.productName}}</p></router-link>
         <p class="pro-line" v-if="Options.lineState"></p>
         <a class="pro-btn" :class="Options.btnBg" :href="item.buyUrl">{{language === 'cn'?Options.btnText.cnText:Options.btnText.enText}}</a>
       </div>
