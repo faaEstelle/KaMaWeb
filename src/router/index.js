@@ -13,6 +13,7 @@ import Cases from '../views/Cases'
 import CaseDetails from '../views/CaseDetails'
 import News from '../views/News'
 import NewsDetail from '../views/NewsDetails'
+import ContactUs from '../views/ContactUs'
 
 
 Vue.use(Router)
@@ -71,7 +72,7 @@ export default new Router({
       component:Cases
     },
     {
-      path:'/Cases/Details',
+      path:'/Cases/Details/:CaseName',
       name:'案例详情',
       component:CaseDetails
     },
@@ -81,9 +82,14 @@ export default new Router({
       component:News
     },
     {
-      path:'/News/Details',
+      path:'/News/Details/:NewsName',
       name:'新闻详情',
       component:NewsDetail
+    },
+    {
+      path:'/ContactUs',
+      name:'联系我们',
+      component:ContactUs
     }
 
 

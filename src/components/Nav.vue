@@ -18,9 +18,9 @@
           <li><a @mouseover="overShow('about')" @mouseout="outHide" :class="NavValue==2?'active':''" href="/About" data-type="about">{{$t("Nav.about")}}</a>
           </li>
           <li><a :class="NavValue==3?'active':''" href="/Products">{{$t("Nav.product")}}</a></li>
-          <li><a :class="NavValue==4?'active':''" href="#">{{$t("Nav.case")}}</a></li>
-          <li><a :class="NavValue==5?'active':''" href="#">{{$t("Nav.news")}}</a></li>
-          <li><a :class="NavValue==6?'active':''" href="#">{{$t("Nav.contact")}}</a></li>
+          <li><a :class="NavValue==4?'active':''" href="/Cases">{{$t("Nav.case")}}</a></li>
+          <li><a :class="NavValue==5?'active':''" href="/News">{{$t("Nav.news")}}</a></li>
+          <li><a :class="NavValue==6?'active':''" href="/ContactUs">{{$t("Nav.contact")}}</a></li>
         </ul>
       </div>
     </div>

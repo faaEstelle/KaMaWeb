@@ -1,6 +1,7 @@
 <template>
 <div class="page-box">
   <Nav :NavValue="currentNav"></Nav>
+  <Banner :Options="BannerData"></Banner>
   <div class="container">
     <p class="inner-nav">
       <a href="/About">{{$t("Nav.product")}}</a>
@@ -45,22 +46,23 @@
       </div>
     </div>
     <div class="product-order-tab">
-      <p class="orderTitle">{{$t("ProductDetail.orderTitle")}}</p>
+      <p class="order-title">{{$t("ProductDetail.orderTitle")}}</p>
       <hr/>
-      <div>
+      <div class="order-base">
         <span>{{$t("ProductDetail.contacts")}}：</span>
         <input name="contacts" type="text"/>
-        <span>{{$t("ProductDetail.call")}}：</span>
-        <input name="call" type="number"/>
-        <span>{{$t("ProductDetail.mail")}}：</span>
+        <span>{{$t("ProductDetail.call")}}</span>
+        <input name="call" type="tel"/>
+        <span>{{$t("ProductDetail.mail")}}</span>
         <input name="mail" type="email"/>
         <span>{{$t("ProductDetail.address")}}：</span>
         <input name="address" type="text"/>
       </div>
-      <div>
+      <div class="order-supplement">
+        <span>{{$t("ProductDetail.detailed")}}：</span>
         <textarea></textarea>
         <span>{{$t("ProductDetail.identifying")}}</span>
-        <input name="identifying" type="text"/><span class="identifying-img"></span>
+        <input name="identifying" type="text"/><span class="box-border identifying-img"></span>
       </div>
       <div class="order-btn">
         <button class="submit">{{$t("ProductDetail.submit")}}</button>

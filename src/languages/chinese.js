@@ -49,7 +49,24 @@ const MessagesCh = {
     main:'主营产品',best:'精品产品',north:'北美材',europe:'欧洲材',southeast:'东南亚材',africa:'非洲材',centralSouth :'中南美材',dyeing:'染色系列'
   },
   ProductDetail:{
-    name:'产品名称',kind:'产品类型',kindName:'皮木', version:'产品型号',times:'查看次数',phone:'订购热线',phoneNumber:'0769-82906000',describeTitle:'产品详情',orderTitle:'订购信息',contacts:'联系人',call:'电话',mail:'邮箱',address:'收货地址',identifying:'验证码',order:'立即预定',submit:'提交',reset:'重置',onlineOrder:'在线预定',last:'上一个',next:'下一个'
+    name:'产品名称',kind:'产品类型',kindName:'皮木', version:'产品型号',times:'查看次数',phone:'订购热线',phoneNumber:'0769-82906000',describeTitle:'产品详情',orderTitle:'订购信息',contacts:'联系人',call:'电 话：',mail:'邮 箱：',address:'收货地址',detailed:'详细描述',identifying:'验证码：',order:'立即预定',submit:'提交',reset:'重置',onlineOrder:'在线预定',last:'上一个',next:'下一个'
+  },
+  CaseDetail:{
+    last:'上一篇',next:'下一篇',share:'分享到'
+  },
+  ContactInfo:{
+    company:'东莞市卡玛实业有限公司',
+    phone:'电话：0769-82906000',
+    fax:'传真：0769-82900010',
+    name:'13592737003 杨贝贝',
+    name2:'15999838585 王金明',
+    email:'邮箱：kamawoods@163.com',
+    address:'地址：广东省东莞市厚街镇科技大道东方兴业城B9座',
+    website:'网址：http://www.kamawoods.com',
+    internetShop:'炫铺地址：http://kama888.b2b.hc360.com',
+
+    leavingMsg:'发表您的留言：',
+    content:'内 容：'
   }
 
 
