@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Index from '../views/Index'
+import Mark from '../views/Mark'
+import Recruit from '../views/Recruit'
 import About from '../views/About'
 import AboutDevelop from '../views/AboutDevelop'
 import AboutSurvey from '../views/AboutSurvey'
@@ -25,6 +27,16 @@ export default new Router({
       path: '/',
       name: '首页',
       component: Index
+    },
+    {
+      path: '/Mark/:Mark',
+      name: '门市',
+      component: Mark
+    },
+    {
+      path: '/Recruit/:Mark/:RecruitType',
+      name: '招聘',
+      component: Recruit
     },
     {
       path:'/About',

@@ -1,7 +1,9 @@
 <template>
 <div class="page-box">
+  <a id="top"></a>
   <Nav :NavValue="currentNav"></Nav>
   <Banner :Options="BannerData"></Banner>
+  <AsideBtn></AsideBtn>
   <div class="index-center">
     <div class="index-about padding-bo-60">
       <PartTitle :Title="PartTitles[0]"></PartTitle>
@@ -17,7 +19,25 @@
     </div>
   </div>
   <div class="index-map">
-    <img src="../../static/img/ditu.png"/>
+    <p>{{$t("doorMarket.distribution")}}</p>
+    <div class="china-map">
+      <div class="distribution chengdu">
+        <router-link to="/Mark/chengdu">{{$t("doorMarket.chengdu")}}</router-link>
+        <span></span>
+      </div>
+      <div class="distribution shanghai">
+        <router-link to="/Mark/shanghai">{{$t("doorMarket.shanghai")}}</router-link>
+        <span></span>
+      </div>
+      <div class="distribution dongguan">
+        <span></span>
+        <router-link to="/Mark/dongguan">{{$t("doorMarket.dongguan")}}</router-link>
+      </div>
+      <div class="distribution jiashan">
+        <span></span>
+        <router-link to="/Mark/jiashan">{{$t("doorMarket.jiashan")}}</router-link>
+      </div>
+    </div>
   </div>
   <div class="index-product padding-bo-60">
     <PartTitle :Title="PartTitles[1]"></PartTitle>
@@ -75,6 +95,7 @@
   import CaseList from '../components/CaseList'
   import NewsList from '../components/NewsList'
   import Footer from '../components/Footer'
+  import AsideBtn from '../components/AsideBtn'
     export default {
        data(){
          return{
@@ -90,7 +111,7 @@
                {
                  "clickUrl": "#",
                  "desc": "hxrj",
-                 "image": "/static/img/banner-1.png"
+                 "image": "/static/img/banner-2.jpg"
                },
                {
                  "clickUrl": "#",
@@ -148,7 +169,8 @@
          ProductList,
          CaseList,
          NewsList,
-         Footer
+         Footer,
+         AsideBtn
        }
     }
 </script>

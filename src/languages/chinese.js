@@ -2,6 +2,7 @@ const MessagesCh = {
   LoginRegister:{login:'登录',register:'注册'},
   Nav:{index:'首 页',about:'关于我们',product:'产品展示',case:'产品案例',news:'新闻资讯',contact:'联系我们'},
   FooterAbout:{title:'关于卡玛',summary:'卡玛简介',characteristic:'卡玛特色',service:'服务条款',information:'卡玛资讯'},
+  doorMarket:{distribution:'门市分布',chengdu:'成都卡玛木皮',shanghai:'上海励志',dongguan:'东莞卡玛木皮',jiashan:'嘉善卡玛',title:'门市地图/联系我们',recruit:'招聘信息',operate:'运营',sale:'销售',design:'设计',program:'程序'},
   FooterHelp:{title:'帮助中心',purchase:'购买流程',payment:'在线支付',invoice:'关于发票',distribution:'配送方式'},
   FooterLink:{title:'友情链接',international:'卡玛国际',mall:'卡玛商城',leather:'皮木专家网',wood:'中国木材网'},
   FooterContact:{title:'联系卡玛',phone:'电话',email:'邮箱'},
